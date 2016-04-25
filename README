@@ -1,0 +1,52 @@
+                                  CLASS_DUMMY plug-in
+
+1 Description
+
+Put here a general introduction to your plugin, with references to underlying algorithm. 
+List all input values needed for classification ("classification features"), pointing to 
+TIE provided feature names and related CLI options.
+
+E.g.:
+
+class_dummy is a plug-in developed to work inside TIE platform to classify IP traffic using 
+some kind of inspection technique. It is based upon a new/well knowo algorithm algorithm 
+(point to References section) called dummy_algorithm.
+
+To perform classification, class_dummy needs the Packet Sizes of the first n packets (TIE 
+option -p <n>).
+
+1.2 Signatures
+
+ Usually a classification plugin uses some kind of data base (string patterns, rules list, 
+ decision parameters) to make its decisions. Such data base should be separated from the 
+ plugin module and usually made of one or more "signature" file(s), that MUST be completely
+ managed by the plugin itself.
+ 
+ Describe here what kind of signature your plugin works with. Explain signatures meaning and
+ format, and how it is used by your plugin algorithm.
+
+1.3 Classification process
+
+ Describe here, in detail, how your plugin implements the classification process, highlighting 
+ different phases, main data structures and algorithm steps.
+
+1.4 Training process
+
+ Describe in detail how your plugin implements the training process (if it does it), 
+ highlighting different phases, main data structures and algorithm steps.
+
+2 Configuration file
+
+If your plugins uses a configuration file, report here naming convenctions, file structure
+and syntax. Then list all available configuration parameters, theri meaning, 
+accepted values and default values.
+
+3 Signature file
+
+Describe here the characteristics of signature file(s) used by your plugin: file naming
+conventions, file structure, meaning of entries, how it has been created, how to modify it.
+
+4 References
+
+List here papers, web-sites, software and other references related to your plugin and 
+similar applications.

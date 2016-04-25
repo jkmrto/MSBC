@@ -1,0 +1,27 @@
+#This file will be used to store the specifications of the MSBC plugin
+
+#Standard Values
+Clusters_Required	15;
+Normalized_size	500;
+
+#Classification values; 
+No_gaussian_min_probability	0.000000001;
+Signature_file_name	own;   #"own" or "foreign"
+Calculate_probability	total;   #"max" or "total"
+
+#Train values
+Print_map_file	Yes;
+
+#This value is important, must indicate the number of applications in TIE, no the total of subaplications; 
+#for TIE v1.2 the number is 408
+Number_protocolos_to_train	408;
+
+Kmeans_Euclidean_shift	No;  
+Kmeans_Euclidean_mean	No;
+Kmeans_model	square_partition;  #square or one
+
+Kmeans_dynamic_step_modifier	0.1; #float
+Kmeans_fixed_shift	0.1; #float
+Error_threshold	0.0000002;  #float
+
+Min_gaussian_variance	0.0000001;  #float
